@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Graduate&family=Montserrat:wght@300;400;900&display=swap");
+
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  background-color: #2A9D8F;
+  position: relative;
+  top: 0;
+}
+
+header {
+  align-items: center;
+  background: #2A9D8F;
+  box-shadow: 2px 2px 2px #000;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 30px;
+  position: relative;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+  position: relative;
+}
+
+header h1>img {
+  margin-top: 5px;
+  max-height: 50px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul>li {
+  margin: 0 5px;
+}
+
+header nav ul>li>a {
+  font-family: 'Graduate';
+  color: #E3EEF2;
+  font-size: 18px;
+  padding: 6px 20px;
+  text-decoration: none;
+}
+
+header nav ul>li>a:hover {
+  background-color: #264653;
+}
+
+.hamburger {
+  display: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center; 
+  font-family: 'Graduate';
+  color: #E3EEF2;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 0 calc(43% - 130px);
+  position: relative;
+}
+
+.cards {
+  margin-bottom: 60px;
+  padding: 30px 60px;
+}
+
+.cards .grid {
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.cards article {
+  font-family: 'Montserrat';
+  background: #264653;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #EFFBFA;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 3px 30px;
+}
+
+.cards article span {
+  font-weight: bold;
+  color: #E3EEF2;
+}
+
+.rodape {
+  background: #000;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.rodape img {
+  left: 45%;
+  max-width: 120px;
+  position: absolute;
+  top: 10px;
+}
+
+.rodape .legend {
+  font-family: 'Graduate';
+  color: #6DAB8E;
+  display: flex;
+  font-size: 12px;
+  justify-content: flex-end;
+  margin: 20px;
+  padding-right: 30px;
+}
