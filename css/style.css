@@ -98,6 +98,12 @@ h2 {
   color: #fcfcfc;
 }
 
+a {
+  text-decoration: none;
+  color: #fcfcfc;
+ }
+ 
+
 .rodape {
   background: #000;
   bottom: 0;
