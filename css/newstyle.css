@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Graduate&family=Montserrat:wght@300;400;900&display=swap");
+
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  background-color: #FCFCFC;
+  position: relative;
+  top: 0;
+ 
+}
+.container{
+  position: absolute;
+  margin-top: 2%;
+  left: 50%;
+  margin-right: -50%;
+    
+  
+}
+header {
+  align-items: center;
+  background: #2A9D8F;
+  box-shadow: 2px 2px 2px #000;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 30px;
+  position: relative;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+  position: relative;
+}
+
+header h1>img {
+  margin-top: 5px;
+  max-height: 50px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul>li {
+  margin: 0 5px;
+}
+
+header nav ul>li>a {
+  font-family: 'Graduate';
+  color: #E3EEF2;
+  font-size: 18px;
+  padding: 6px 20px;
+  text-decoration: none;
+}
+
+header nav ul>li>a:hover {
+  background-color: #264653;
+}
+
+.hamburger {
+  display: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center; 
+  font-family: 'Graduate';
+  color: #E3EEF2;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 0 calc(43% - 130px);
+  position: relative;
+}
+
+.cards {
+  margin-bottom: 60px;
+  padding: 30px 60px;
+}
+
+.cards .grid {
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.cards article {
+  font-family: 'Montserrat';
+  background: #264653;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #EFFBFA;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 3px 30px;
+}
+
+.cards article span {
+  font-weight: bold;
+  color: #E3EEF2;
+}
+
+.rodape {
+  background: #000;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.rodape img {
+  left: 45%;
+  max-width: 120px;
+  position: absolute;
+  top: 10px;
+}
+
+.rodape .legend {
+  font-family: 'Graduate';
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  justify-content: flex-end;
+  margin: 20px;
+  padding-right: 30px;
+}
+
+/*
+
+/* Elementos com o ID "titulo" */
+#titulo{
+  color: #494949;
+  margin-left: 0;
+
+}
+
+
+
+/* Elementos de tag <fieldset>*/
+fieldset{
+  border: 0;
+}
+
+
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button{
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #494949;
+  border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+  display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+  clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo{
+  margin-bottom: 1em;
+  
+ ;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label{
+  margin-bottom: 0.2em;
+  color: #494949;
+  display: flex;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo{
+  float: left;
+  margin-right: 1em;
+
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type = "text"], .campo input[type = "email"], .campo select, .campo textarea{
+  padding: 0.2em;
+  border: 1px solid #494949;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option{
+  padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+  background: #FCFCFC;
+}
+
+/* Elemento de classe "botao" *//* Elemento de classe "botao" */
+.botao{
+  font-size: 1.2em;
+  background: #494949;
+  border:0;
+  margin-bottom: 1em;
+  color: #FCFCFC;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin-left: 35%;
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover{
+  background: #04D361;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+  cursor: pointer;
+}
