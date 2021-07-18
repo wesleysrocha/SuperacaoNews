@@ -19,8 +19,8 @@ html body {
 }
 header {
   align-items: center;
-  background: #2A9D8F;
-  box-shadow: 2px 2px 2px #000;
+  background: #212121;
+  box-shadow: 2px 2px 2px #494949;
   display: flex;
   height: 60px;
   justify-content: space-between;
@@ -50,15 +50,15 @@ header nav ul>li {
 }
 
 header nav ul>li>a {
-  font-family: 'Graduate';
-  color: #E3EEF2;
+  font-family: 'Graduate', 'sans-serif';
+  color: #fcfcfc;
   font-size: 18px;
   padding: 6px 20px;
   text-decoration: none;
 }
 
 header nav ul>li>a:hover {
-  background-color: #264653;
+  background-color: #494949;
 }
 
 .hamburger {
@@ -68,7 +68,7 @@ header nav ul>li>a:hover {
 h2 {
   display: flex;
   justify-content: center; 
-  font-family: 'Graduate';
+  font-family: 'Graduate', 'sans-serif';
   color: #E3EEF2;
   font-size: 30px;
   font-weight: 900;
@@ -89,7 +89,7 @@ h2 {
 }
 
 .cards article {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'sans-serif';
   background: #264653;
   border-radius: 4px;
   box-sizing: border-box;
@@ -107,7 +107,7 @@ h2 {
 }
 
 .rodape {
-  background: #000;
+  background: #212121;
   bottom: 0;
   overflow: hidden;
   position: fixed;
@@ -124,7 +124,7 @@ h2 {
 
 .rodape .legend {
   font-family: 'Graduate';
-  color: #fff;
+  color: #fcfcfc;
   display: flex;
   font-size: 12px;
   justify-content: flex-end;
