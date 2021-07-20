@@ -18,8 +18,6 @@ header {
   justify-content: space-between;
   max-width: 100%;
   padding: 0 30px;
-  position: relative;
-  top: 0;
 }
 
 header h1 {
@@ -56,11 +54,14 @@ header nav ul>li>a:hover {
 .hamburger {
   display: none;
 }
-
 h2 {
-  display: flex;
-  justify-content: center; 
+   
   font-family: 'Graduate';
+}
+
+h2:not(.slider-title) {
+  display: flex;
+  justify-content: center;
   color: #212121;
   font-size: 30px;
   font-weight: 900;
@@ -110,6 +111,7 @@ a {
   overflow: hidden;
   position: fixed;
   width: 100%;
+  height: 60px;
   z-index: 10;
 }
 
@@ -217,4 +219,117 @@ input, select, textarea, button{
 /* Elementos de classe botão e de tag <select> */
 .botao, select{
   cursor: pointer;
+}
+
+.slider {
+  height: calc(100vh - 120px);
+  background: cyan;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider .slider-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: hidden;
+  width: 400px;
+  position: absolute;
+  transition: all 1s ease-in-out; 
+}
+
+
+.slider .slider-list .slider-item {
+  width: 100%;
+  height: 130px;
+  background-color: #fcfcfc;
+  border-radius: 2px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.slider .slider-list .slider-item img {
+  position: relative;
+  width: 130px;
+  min-width: 130px;
+}
+
+.slider .slider-list .slider-item .legenda {
+  position: relative;
+}
+
+.slider .slider-list .slider-item .legenda h2, 
+.slider .slider-list .slider-item .legenda p
+{
+  color: #212121;
+}
+
+.slider .slider-list .slider-item .legenda h2 {
+  font-size: 24px;
+}
+
+.slider .slider-list .slider-item .legenda p {
+  font-size: 14px;
+}
+
+.slider .highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+}
+
+.highlight .legenda {
+  position: absolute;
+  width: 40%;
+  bottom: 40px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+}
+
+
+.legenda p, .legenda * {
+  text-align: left;
+  margin: 4px 0;
+}
+
+.legenda .slider-title {
+  font-size: 40px;
+}
+
+.legenda .category {
+  font-size: 10px;
+  width: 30%;
+  padding: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.category.orange {
+  background-color: #ff6600;
+}
+
+.legenda {
+  color: #fff;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
