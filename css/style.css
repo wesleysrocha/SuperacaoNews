@@ -333,3 +333,34 @@ input, select, textarea, button{
   margin: 0;
   padding: 0;
 }
+
+
+.materia{
+width: 650px;
+margin: 40px auto;
+
+}
+
+.materia img{
+  width: 100%;
+}
+
+.materia .materia-escrita{
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.materia .materia-escrita:last-child{
+  margin-bottom: 100px;
+}
+
+.container-audio{
+  background-color: #494949;
+  margin-bottom: 100px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+audio{
+ width: 100%;
+}
