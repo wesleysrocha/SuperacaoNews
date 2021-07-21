@@ -356,7 +356,7 @@ margin: 40px auto;
 
 .container-audio{
   background-color: #494949;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: 30px;
   border-radius: 10px;
 }
@@ -364,3 +364,15 @@ margin: 40px auto;
 audio{
  width: 100%;
 }
+
+.fonte-materia{
+  font-family: 'Graduate';
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 5px;
+  background-color: #494949;
+  border-radius: 10px;
+  width: 20%;
+  float:right;
+  }
