@@ -394,3 +394,10 @@ audio{
     padding-left: o;
   }
 
+  a:hover {
+    opacity: .7;
+  }
+
+  #fonte-saibaMais{
+    color: #fcfcfc;
+  }
